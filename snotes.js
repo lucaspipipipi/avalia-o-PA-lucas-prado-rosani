@@ -11,3 +11,9 @@
         }
     }
 
+        function mouseP ( ) {
+                hj = document.querySelector('#bloconotas1')
+                hj.addEventListenr()
+
+        }
+
