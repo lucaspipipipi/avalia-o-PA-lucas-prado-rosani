@@ -1,0 +1,87 @@
+
+   *{
+        box-sizing: border-box;
+      }
+      
+      menu {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Style the side navigation */
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+      }
+      
+      
+      /* Side navigation links */
+      .sidenav a {
+        color: white;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        
+      }
+      .logo {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        position: sticky;
+        left: 10%;
+      }
+      /* Change color on hover */
+      .sidenav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Style the content */
+      .areadetrabalho {
+        margin-left: 200px;
+        padding-left: 20px;
+      }
+      .bdn1 {
+        
+        height: 40%;
+        width: 300px;
+        position: absolute;
+        
+        left: 10;
+        bottom: 40px;
+
+        background-color: #d12e2e;
+        overflow-x: hidden;
+      }
+      .bdnonline {
+        
+        height: 40%;
+        width: 300px;
+        position: absolute;
+        
+        left: 10;
+        top: 70px;
+
+        background-color: #a1f55c;
+        overflow-x: hidden;
+      }
+
+      .word {
+        
+        height: 89%;
+        width: 600px;
+        position: absolute;
+        
+        right: 35%;
+        top: 70px;
+
+        background-color: #7e8a75;
+        overflow-x: hidden;
+      }
