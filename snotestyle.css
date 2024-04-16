@@ -48,40 +48,6 @@
         margin-left: 200px;
         padding-left: 20px;
       }
-      .bdn1 {
-        
-        height: 40%;
-        width: 300px;
-        position: absolute;
-        
-        left: 10;
-        bottom: 40px;
 
-        background-color: #d12e2e;
-        overflow-x: hidden;
-      }
-      .bdnonline {
-        
-        height: 40%;
-        width: 300px;
-        position: absolute;
-        
-        left: 10;
-        top: 70px;
 
-        background-color: #a1f55c;
-        overflow-x: hidden;
-      }
-
-      .word {
-        
-        height: 89%;
-        width: 600px;
-        position: absolute;
-        
-        right: 35%;
-        top: 70px;
-
-        background-color: #7e8a75;
-        overflow-x: hidden;
-      }
+      .bdn

@@ -1,0 +1,99 @@
+<!-- menu -->
+        <div class="areadetrabalho">
+            <div class="bdn1">
+                <h1>bloco de notas</h1>
+                <textarea id="textareaBdn1" placeholder="Digite aqui"></textarea>
+                <button onclick="escreverNaDiv('bdn1')">salvar</button>
+            </div> 
+            <div class="word">
+                <h1>Word</h1>
+                <textarea id="textareaWord" placeholder="Digite aqui"></textarea>
+                <button onclick="escreverNaDiv('word')">salvar</button>
+            </div>
+            <div class="bdnonline">
+                <h1>Bloco de notas online</h1>
+                <textarea id="textareaBdnonline" placeholder="Digite aqui"></textarea>
+                <button onclick="escreverNaDiv('bdnonline')">salvar</button>
+            </div>
+        </div>
+css menu antigo 
+
+.bdn1 {
+        
+        height: 40%;
+        width: 300px;
+        position: absolute;
+        
+        left: 10;
+        bottom: 40px;
+
+        background-color: #d12e2e;
+        overflow-x: hidden;
+      }
+      .bdnonline {
+        
+        height: 40%;
+        width: 300px;
+        position: absolute;
+        
+        left: 10;
+        top: 70px;
+
+        background-color: #a1f55c;
+        overflow-x: hidden;
+      }
+
+      .word {
+        
+        height: 89%;
+        width: 600px;
+        position: absolute;
+        
+        right: 35%;
+        top: 70px;
+
+        background-color: #7e8a75;
+        overflow-x: hidden;
+      }
+
+/* CSS para estilizar o botão da função escreverNaDiv */
+      button {
+        background-color: #ffffff; /* Cor de fundo */
+        color: rgb(0, 0, 0); /* Cor do texto */
+        padding: 10px 20px; /* Espaçamento interno */
+        font-size: 16px; /* Tamanho da fonte */
+        border-style: solid;
+        border-radius: 7px;
+        border-color: #757575;
+        border-radius: 7px; /* Borda arredondada */
+        cursor: pointer; /* Cursor de ponteiro */
+        transition: background-color 0.3s ease; /* Transição suave */
+      }
+
+      /* Alterar a cor de fundo quando o botão for passado */
+      button:hover {
+        background-color: #cccccc;
+      }
+
+      /* Estilo para o textarea */
+      textarea {
+        width: 100%; /* Largura total */
+        height: 100%; /* Altura fixa */
+        padding: 10%; /* Espaçamento interno */
+        box-sizing: border-box; /* Incluir o padding no cálculo do tamanho total */
+        border: 1px solid #ccc; /* Borda cinza */
+        border-radius: 5px; /* Borda arredondada */
+        resize: vertical; /* Permitir redimensionamento vertical */
+        margin-bottom: 10px; /* Margem inferior */
+      }
+      
+      /* Estilo para o h1 dentro da div */
+      h1 {
+        margin-bottom: 10px; /* Margem inferior */
+        font-size: 18px; /* Tamanho da fonte */
+      }
+
+      /* Estilo para o div que contém o textarea e o botão */
+      .divWithTextarea {
+        margin-bottom: 20px; /* Margem inferior */
+      }
