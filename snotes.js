@@ -1,19 +1,16 @@
-    // escrever nas div
-    function escreverNaDiv(divId) {
-        var textareaId = "textarea" + divId.charAt(0).toUpperCase() + divId.slice(1);
-        var textarea = document.getElementById(textareaId);
-    
-        if (textarea) {
-            textarea.value = textarea.value + "\n" + document.getElementById("input" + divId.charAt(0).toUpperCase() + divId.slice(1)).value;
-            document.getElementById("input" + divId.charAt(0).toUpperCase() + divId.slice(1)).value = "";
-        } else {
-            console.error("Textarea não encontrado.");
+   
+    // passa em cima do baguio e faze animação
+        var item = document.getElementById("#bloconotas1","#bdnonline1");
+        item.addEventListener("mouseover", mousep, false);
+        item.addEventListener("mouseout", mousep1, false);
+        
+        function mousep()
+        {  
+           item.setAttribute("style", "transform: scale(1.1)")
         }
-    }
-
-        function mouseP ( ) {
-                hj = document.querySelector('#bloconotas1')
-                hj.addEventListenr()
-
+        
+        function mousep1()
+        {  
+           item.setAttribute("style", "transform: scale(1)")
         }
-
+        

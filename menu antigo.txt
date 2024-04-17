@@ -97,3 +97,42 @@ css menu antigo
       .divWithTextarea {
         margin-bottom: 20px; /* Margem inferior */
       }
+
+
+
+
+ // escrever nas div
+    function escreverNaDiv(divId) {
+        var textareaId = "textarea" + divId.charAt(0).toUpperCase() + divId.slice(1);
+        var textarea = document.getElementById(textareaId);
+    
+        if (textarea) {
+            textarea.value = textarea.value + "\n" + document.getElementById("input" + divId.charAt(0).toUpperCase() + divId.slice(1)).value;
+            document.getElementById("input" + divId.charAt(0).toUpperCase() + divId.slice(1)).value = "";
+        } else {
+            console.error("Textarea não encontrado.");
+        }
+    }
+
+
+
+
+//keyframe de animação
+
+      animation: customAni 100ms linear 1s 1 normal none;
+
+      @keyframes customAni {
+        0% {
+        transform: scale(1);
+        }
+      
+        50% {
+        transform: scale(1.1);
+        }
+      
+        100% {
+        transform: scale(1);
+        }
+        
+      }
+      
