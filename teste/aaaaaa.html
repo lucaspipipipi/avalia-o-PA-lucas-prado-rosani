@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Notepad App</h1>
+            <button id="new-note-button">Nova Nota</button>
+        </div>
+        <div class="editor-view-toggle">
+            <button id="toggle-view-button">Alternar para Visualização</button>
+        </div>
+        <div class="editor-container">
+            <textarea id="note-input" placeholder="Digite sua nota em Markdown aqui..."></textarea>
+            <div id="note-preview" class="preview"></div>
+        </div>
+        <div class="notes-list">
+            <h2>Suas Notas</h2>
+            <ul id="notes-list"></ul>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

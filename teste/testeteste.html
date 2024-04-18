@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleteste.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Editor de Texto</title>
+    <link rel="stylesheet" href="styleteste.css">
 </head>
 <body>
     <div id="toolbar">
-        <button onclick="formatText('bold')">Negrito</button>
-        <button onclick="formatText('italic')">Itálico</button>
-        <button onclick="formatText('underline')">Sublinhado</button>
+        <div>
+            <button class="toolbar-button" onclick="formatText('bold')"><i class="fas fa-bold"></i></button>
+            <button class="toolbar-button" onclick="formatText('italic')"><i class="fas fa-italic"></i></button>
+            <button class="toolbar-button" onclick="formatText('underline')"><i class="fas fa-underline"></i></button>
+            <input type="color" id="color-picker" onchange="changeColor()">
+        </div>
+        <div>
+            <button class="toolbar-button" onclick="justifyText('left')"><i class="fas fa-align-left"></i></button>
+            <button class="toolbar-button" onclick="justifyText('center')"><i class="fas fa-align-center"></i></button>
+            <button class="toolbar-button" onclick="justifyText('right')"><i class="fas fa-align-right"></i></button>
+            <button class="toolbar-button" onclick="justifyTextFull()"><i class="fas fa-align-justify"></i></button>
+            <button class="toolbar-button" onclick="insertList()"><i class="fas fa-list-ol"></i></button>
+            <button class="toolbar-button" onclick="increaseFontSize()"><i class="fas fa-plus"></i></button>
+            <button class="toolbar-button" onclick="decreaseFontSize()"><i class="fas fa-minus"></i></button>
+            
+        </div>
     </div>
 
-    <div id="editor" contenteditable="true" placeholder="Digite aqui"></div>
+    <div id="editor" contenteditable="true"></div>
 
-    <script src="script.js"></script>
+    <script src="teste.js"></script>
 </body>
 </html>
