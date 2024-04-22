@@ -47,7 +47,7 @@ function decreaseFontSize() {
 function insertTitle() {
     var selection = window.getSelection();
     var range = selection.getRangeAt(0);
-    var titleNode = document.createElement('h2');
+    var titleNode = document.createElement('h1');
     titleNode.textContent = "Título";
     range.deleteContents();
     range.insertNode(titleNode);
@@ -57,7 +57,7 @@ function insertTitle() {
 function insertSubtitle() {
     var selection = window.getSelection();
     var range = selection.getRangeAt(0);
-    var subtitleNode = document.createElement('h1');
+    var subtitleNode = document.createElement('h2');
     subtitleNode.textContent = "Subtítulo";
     range.deleteContents();
     range.insertNode(subtitleNode);
@@ -123,4 +123,29 @@ function updateSavedFilesList() {
 
 document.addEventListener('DOMContentLoaded', function() {
     updateSavedFilesList();
+});
+
+// Captura o evento de colagem
+document.getElementById('editor').addEventListener('paste', function(event) {
+    // prevenir o comportamento padrão de colagem
+    event.preventDefault();
+
+    // obter o conteúdo colado como texto
+    var pastedText = (event.originalEvent || event).clipboardData.getData('text/plain');
+
+    // criar um elemento temporario para manipulação
+    var tempElement = document.createElement('div');
+
+    // aplicar estilos ao elemento temporário
+    tempElement.style.backgroundColor = '#c8eaf8'; 
+    tempElement.style.padding = '10px'; 
+
+    // definir o conteudo colado no elemento temporário
+    tempElement.textContent = pastedText;
+
+    // limpar o conteudo atual do editor
+    document.getElementById('editor').innerHTML = '';
+
+    // colar o conteudo estilizado no editor
+    document.getElementById('editor').appendChild(tempElement);
 });

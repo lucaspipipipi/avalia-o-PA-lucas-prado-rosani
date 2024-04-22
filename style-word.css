@@ -1,4 +1,53 @@
-/* style-word.css */
+/* estilos para dispositivos de largura menor que 768px (celular) */
+@media only screen and (max-width: 767px) {
+    #toolbar {
+        width: auto;
+        flex-direction: column;
+        padding: 10px; 
+    }
+    .toolbar-button {
+        margin-bottom: 10px; 
+    }
+    #editor {
+        position: static; 
+        width: 100%; 
+        min-height: 300px; 
+        padding: 10px;
+        margin: 0; 
+    }
+}
+
+/* estilos para dispositivos de largura entre 768px e 1023px (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #toolbar {
+        padding: 15px; 
+    }
+    .toolbar-button {
+        margin-bottom: 15px; 
+    }
+    #editor {
+        width: 90%; 
+        min-height: 500px; 
+    }
+}
+
+/* estilos para dispositivos de largura maior ou igual a 1024px (desktop) */
+@media only screen and (min-width: 1024px) {
+    #toolbar {
+        width: auto;
+        padding: 20px; 
+    }
+    .toolbar-button {
+        margin-bottom: 20px; 
+    }
+    #editor {
+        width:auto; 
+        min-height: 700px; 
+    }
+}
+
+
+
 body {
     background-color: #e4f2ff;
     margin: 0;
@@ -6,23 +55,21 @@ body {
 }
 
 #toolbar {
-    margin-bottom: 10px;
+    margin-bottom: 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #d2f2ff;
     border: 1px solid #c8eaf8;
     border-radius: 4px;
-    padding: 10px;
 }
 
 .toolbar-button {
-    padding: 8px 12px;
-    margin-right: 5px;
     border: none;
     cursor: pointer;
     background-color: #c8eaf8;
     border-radius: 4px;
+    padding: 10px 15px;
     transition: background-color 0.3s;
 }
 
@@ -31,21 +78,20 @@ body {
 }
 
 #editor {
-    background-color: rgba(199, 230, 243, 0.8);
-    border: 1px solid #c8eaf8;
+    background-color: rgb(199, 230, 243);
+    border: 6px solid;
+    border-color: #b3d9f2;
     border-radius: 4px;
-    position: absolute;
-    left: 10%;
-    bottom: 4%;
-    width: 80%;
-    min-height: 800px;
     padding: 10px;
+    background-clip: padding-box; 
+    white-space: pre-wrap; 
 }
 
 #color-picker {
     width: 40px;
     height: 30px;
-    border: none;
+    border: 1px solid;
+    border-color: rgb(196, 241, 255);
     border-radius: 4px;
     margin-right: 5px;
 }
