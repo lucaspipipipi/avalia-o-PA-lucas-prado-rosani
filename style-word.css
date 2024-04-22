@@ -1,11 +1,19 @@
+/* style-word.css */
+body {
+    background-color: #e4f2ff;
+    margin: 0;
+    padding: 0;
+}
+
 #toolbar {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f3f3f3;
-    border-bottom: 1px solid #b3b3b3;
-    padding: 5px;
+    background-color: #d2f2ff;
+    border: 1px solid #c8eaf8;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 .toolbar-button {
@@ -13,25 +21,27 @@
     margin-right: 5px;
     border: none;
     cursor: pointer;
-    background-color: transparent;
+    background-color: #c8eaf8;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
 
 .toolbar-button:hover {
-    background-color: #ddd;
+    background-color: #b3d9f2;
 }
 
 #editor {
-    border: 1px solid #b3b3b3;
+    background-color: rgba(199, 230, 243, 0.8);
+    border: 1px solid #c8eaf8;
+    border-radius: 4px;
     position: absolute;
     left: 10%;
-    bottom: 7%;
+    bottom: 4%;
     width: 80%;
     min-height: 800px;
-    padding: 5px;
-
+    padding: 10px;
 }
+
 #color-picker {
     width: 40px;
     height: 30px;

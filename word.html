@@ -1,3 +1,5 @@
+<!-- word.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,12 +25,28 @@
             <button class="toolbar-button" onclick="insertList()"><i class="fas fa-list-ol"></i></button>
             <button class="toolbar-button" onclick="increaseFontSize()"><i class="fas fa-plus"></i></button>
             <button class="toolbar-button" onclick="decreaseFontSize()"><i class="fas fa-minus"></i></button>
-            
+            <button class="toolbar-button" onclick="insertTitle()"><i class="fas fa-heading"></i> Título</button>
+            <button class="toolbar-button" onclick="insertSubtitle()"><i class="fas fa-heading"></i> Subtítulo</button>
+        </div>
+        <div>
+            <button class="toolbar-button"><input type="file" id="file-input" accept=".txt" onchange="loadFile(event)"></button>
+        </div>
+        <div>
+            <input type="text" id="txtFileName" placeholder="Nome do arquivo">
+            <button class="toolbar-button" onclick="saveAsTxt()">Salvar como TXT</button>
+        </div>
+        <div>
+            <select id="saved-files" onchange="loadSavedFile()">
+                <option selected disabled>Carregar arquivo</option>
+            </select>
+            <button class="toolbar-button" onclick="saveContent()">Salvar</button>
+            <button class="toolbar-button" onclick="deleteFile()">Excluir</button>
         </div>
     </div>
-
+    
     <div id="editor" contenteditable="true"></div>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <script src="word.js"></script>
 </body>
 </html>

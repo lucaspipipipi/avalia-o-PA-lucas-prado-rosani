@@ -1,96 +1,80 @@
+/* snotestyle.css */
 
-   *{
-        box-sizing: border-box;
-      }
-      
-      menu {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      
-      /* Style the side navigation */
-      .sidenav {
-        height: 100%;
-        width: 200px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-      }
-      
-      
-      /* Side navigation links */
-      .sidenav a {
-        color: white;
-        padding: 16px;
-        text-decoration: none;
-        display: block;
-        
-      }
-      .logo {
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px;
-        width: 150px;
-        position: sticky;
-        left: 10%;
-      }
-      /* Change color on hover */
-      .sidenav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      /* Style the content */
-      .areadetrabalho {
-        margin-left: 200px;
-        padding-left: 20px;
-      }
+/* snotestyle.css */
 
-      #bloconotas1 {
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      position: absolute;
-      max-width: 410px;
-      width: 410px;
-      height: 410px;
-      margin:100px auto;
-      background-color: #d3d3d3;
-      border-radius: 10px;
-      padding: 150px;
-      box-shadow: .1em .1em .2em .1em rgb(114, 114, 114);
-      top: -5%;
-      }
-     
-      #bdnonline1 {
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        position: absolute;
-        max-width: 410px;
-        width: 410px;
-        height: 410px;
-        margin:100px auto;
-        background-color: #d3d3d3;
-        border-radius: 10px;
-        padding: 150px;
-        box-shadow: .1em .1em .2em .1em rgb(114, 114, 114);
-        top: 40%; 
-      }
-      #word1 {
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        position: absolute;
-        max-width: 810px;
-        width: 810px;
-        height: 810px;
-        margin:100px auto;
-        background-color: #d3d3d3;
-        border-radius: 10px;
-        padding: 150px;
-        box-shadow: .1em .1em .2em .1em rgb(114, 114, 114);
-        top: -4%; 
-        right: 20%;
-      }
-      
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #e4f2ff;
+}
+
+.menu {
+  display: flex;
+  background-color: #e4f2ff;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #beedff;
+  overflow-x: hidden;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.areadetrabalho:hover {
+  flex-grow: 1;
+  padding: 20px;
+  position: static;
+  transition: transform 1.1;
+  
+}
+
+#word1 {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.word-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.word-container h1 {
+  margin-bottom: 10px;
+}
+.contato {
+  position: absolute;
+  bottom: 0px;
+  font-size: medium;
+  text-align:start;
+}
